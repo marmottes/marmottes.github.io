@@ -1,0 +1,73 @@
+::-webkit-selection { background: orange; }
+   ::-moz-selection { background: orange; }
+		::selection { background: orange; }
+
+html, body {
+
+	margin: 0;
+	padding: 0;
+
+}
+
+a { color: black; }
+
+/* MAIN TITLE
+   ----------------------------- */
+
+h1.title {
+
+	margin-top: 60px;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 52px;
+
+}
+
+h1.title a { text-decoration: none; }
+
+@media (max-width: 500px) {
+
+	h1.title { font-size: 42px; }
+
+}
+
+@media (max-width: 350px) {
+
+	h1.title { font-size: 36px; }
+
+}
+
+/* WORKS
+   ----------------------------- */
+
+.works {
+
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	margin: 60px auto auto auto;
+
+}
+
+.works a {
+
+	display: block;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+
+}
+
+.work {
+
+
+
+}
+
+.work h2 {
+
+	font-family: sans-serif;
+	font-size: 32px;
+
+}
