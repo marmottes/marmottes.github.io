@@ -1,0 +1,18 @@
+
+/* LINKS
+   ============================= */
+
+a {
+
+	color: $text-color;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+
+}
+
+a:hover {
+
+	color: $text-color;
+	border-bottom-color: currentColor;
+
+}

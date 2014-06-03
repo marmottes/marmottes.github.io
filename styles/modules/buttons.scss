@@ -1,0 +1,42 @@
+
+/* BUTTONS
+   ============================= */
+
+$button-padding: 10px;
+
+.button {
+
+	padding: $button-padding $button-padding * 3;
+
+	color: white;
+	background: transparent;
+	border: 1px solid currentColor;
+
+	@include border-radius(16px);
+
+	@include transition(#{background 0.2s, color 0.2s});
+
+}
+
+.button:hover {
+
+	color: $green;
+	background: white;
+	border-color: white;
+
+}
+
+$button-icon-size: 20px;
+$button-icon-margin: 4px;
+
+.button .icon {
+
+	position: relative;
+	left: -$button-icon-size / 3;
+	top: $button-icon-margin;
+
+	width: $button-icon-size;
+	height: $button-icon-size;
+	margin-top: -$button-icon-margin;
+
+}

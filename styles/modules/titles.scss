@@ -1,0 +1,50 @@
+
+/* TITLES
+   ============================= */
+
+$h1: 400%;
+$h2: 250%;
+$h3: 180%;
+$h4: 120%;
+
+h1, h2 {
+
+	font-weight: 600;
+	font-family: $font-title;
+
+}
+
+h3, h4, h5, h6 {
+
+	font-weight: 300;
+	font-family: $font;
+
+}
+
+h1 {
+
+	font-size: $h1;
+	@media (max-width: 600px) { font-size: $h1 / 1.3; }
+
+}
+
+h2 {
+
+	font-size: $h2;
+	@media (max-width: 600px) { font-size: $h2 / 1.3; }
+
+}
+
+h3 {
+
+	font-size: $h3;
+	@media (max-width: 600px) { font-size: $h3 / 1.3; }
+
+}
+
+h4 {
+
+	font-size: $h4;
+	@media (max-width: 600px) { font-size: $h4 / 1.3; } 
+
+}

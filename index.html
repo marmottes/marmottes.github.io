@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
+    <head>
 
-		<meta charset="utf-8">
+        <title>Marmottes</title>
 
-		<title>Marmottes!</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="bin/style.min.css">
 
-	</head>
+    </head>
 
-	<body>
+    <body>
 
-		<main class="content">
+        <main class="header">
 
-			<h1 class="title">
-				<a href="https://github.com/marmottes/" target="_blank">
+            <h1>Marmottes</h1>
 
-					Marmottes!
+            <h3>
+                Outils de développement pleins de Marmot Power.
+            </h3>
 
-				</a>
-			</h1>
+            <a href="https://github.com/marmottes" class="button">
+                <img src="assets/icons/github.png" class="icon">Github
+            </a>
+            
+        </main>
 
-		</main>
+        <main class="content">
 
-		<sections class="works">
-			
-			<div class="work">
-				
-				<h2>
-					<a href="marmottipsum">
+            <article class="tool">
+                
+                <h2>
+                    <a href="marmottipsum">MarmotIpsum</a>
+                </h2>
 
-						Marmottipsum
+                <p>
 
-					</a>
-				</h2>
+                    Générateur de faux texte pour la mise en page. Ajoutez-y un zeste de Marmotte et vous obtenez un MarmottIpsum.<br>
+                    Utilisable très simplement en JavaScript ou displonible à cette adresse : <a href="marmottipsum">marmottes.github.io/marmottipsum</a>
 
-				<p>
-					
-					Générateur de Lorem Ispum plein de marmottes
+                    <blockquote style="max-height: 200px;">
+                        
+                        A pretty Marmot Ipsum duis irure adipisicing nulla species dolore laboris Alpine marmot sint marmota consectetur. Qui non exercitation rodents voluptate mountainous areas sunt incididunt marmottipsum esse aliquip pariatur mountainous areas sit duis laboris sweet occaecat et eat Alps species consequat est. Marmottouner id nisi dolore officia consequat cupidatat et. Fugiat aliquip culpa non amet officia species nisi eat quis aliqua nisi voluptate species marmottipsum consequat species run deserunt, In amet et sunt aliqua. Tempor do velit non marmottouner pariatur marmot exercitation officia pariatur species elit marmottouner do Excepteur exercitation ullamco sweet rodents magna voluptate winter mountainous areas Excepteur est eiusmod mountain marmot wild eu marmottouner marmottouner.
 
-				</p>
+                    </blockquote>
 
-			</div>
+                </p>
 
-		</sections>
+            </article>
 
-	</body>
+            <article class="tool">
+                
+                <h2>
+                    <a href="https://github.com/marmottes/marmottajax">MarmotAjax</a>
+                </h2>
+
+                <p>
+                    
+                    MarmottAjax est un petite librairie JavaScript qui permet d'envoyer et recevoir des informations simplement en Ajax. Plus la peine de se compliquer la tâche avec le fonctionnement biscornu d'Ajax, s'il suffit d'appeler un unique fonction.<br>
+                    Vous pouvez retrouver cette librairie et des exemples concrets sur son <a href="https://github.com/marmottes/marmottajax">repos Github</a>.<br>
+                    <br>
+                    Voici un exemple de récuperation du contenu du fichier <i>marmotte.txt</i> :
+                    <pre>
+marmottajax("marmotte.txt").then(function(result) {
+
+        alert(result);
+
+}).error(function(message) {
+
+        alert(message);
+ 
+});</pre>
+
+                </p>
+
+            </article>
+
+        </main>
+        
+        <script src="bin/script.js"></script>
+
+    </body>
 
 </html>

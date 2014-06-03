@@ -1,0 +1,20 @@
+
+/* TOOL
+   ============================= */
+
+.tool {
+
+	padding: 10px;
+
+}
+
+.tool h2 a { border: none; }
+
+.tool p {
+
+	text-align: justify;
+	line-height: 1.6;
+
+	@media (max-height: 600px) { text-align: left; }
+
+}

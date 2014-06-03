@@ -1,0 +1,39 @@
+
+/* FONTS LOADER
+   ============================= */
+
+@font-face {
+
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Open Sans Light"), local("OpenSans-Light"), url(../assets/fonts/open-sans-light.ttf) format("truetype");
+
+}
+
+@font-face {
+
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Open Sans"), local("OpenSans"), url(../assets/fonts/open-sans.ttf) format("truetype");
+
+}
+
+@font-face {
+
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 300;
+	src: local("Merriweather Sans Light"), local("MerriweatherSans-Light"), url(../assets/fonts/merriweather-sans-light.ttf) format("truetype");
+
+}
+
+@font-face {
+
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 600;
+	src: local("Merriweather Sans Bold"), local("MerriweatherSans-Bold"), url(../assets/fonts/merriweather-sans-bold.ttf) format("truetype");
+
+}

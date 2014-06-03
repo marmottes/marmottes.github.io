@@ -1,0 +1,24 @@
+
+/* CONTENT
+   ============================= */
+
+$content-width: 1000px;
+
+.content {
+
+	position: relative;
+	top: $header-default-height + 30px;
+
+	@for $i from 9 through 5 {
+
+		@media (max-height: $i * 100 + 50px) { top: $i * 100 - 270px; }
+
+	}
+
+	display: block;
+	width: 100%;
+	max-width: $content-width;
+	margin: auto;
+	margin-bottom: 50px;
+
+}

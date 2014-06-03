@@ -1,0 +1,90 @@
+
+/* HEADER
+   ============================= */
+
+
+$header-default-height: 700px;
+
+.header {
+
+	position: absolute;
+	top: 0; left: 0; right: 0;
+
+	display: block;
+	height: $header-default-height;
+
+	@for $i from 9 through 5 {
+
+		@media (max-height: $i * 100 + 50px) { height: $i * 100 - 300px; }
+
+	}
+	  
+
+	background: $dark-gray;
+	background-image: url(../assets/images/background.jpg);
+	text-align: center;
+
+	@include background-cover();
+
+	h1, h3 { color: white; }
+
+}
+
+$h1-top: 30%;
+$h3-top: 50%;
+
+$media-small-h1-top: 20%;
+$media-small-h3-top: 60%;
+
+$media-tiny-h1-top: 25%;
+$media-tiny-h3-top: 55%;
+
+.header h1,
+.header h3 {
+
+	position: absolute;
+
+	width: 100%;
+	text-align: center;
+
+}
+
+.header h1 {
+
+	top: $h1-top;
+
+	@media (max-height: 750px) { top: $media-small-h1-top; }
+	@media (max-width: 600px)  { top: $media-tiny-h1-top; }
+
+}
+
+.header h3 {
+
+	top: $h3-top;
+
+	@media (max-height: 750px) { top: $media-small-h3-top; }
+	@media (max-width: 600px)  { top: $media-tiny-h3-top; }
+
+}
+
+.header .button {
+
+	position: absolute;
+	top: 50px;
+	right: 50px;
+
+	@media (max-width: 800px)  {
+
+		top: 30px;
+		right: 30px;
+
+	}
+
+	@media (max-width: 600px)  {
+
+		top: 10px;
+		right: 10px;
+
+	}
+
+}

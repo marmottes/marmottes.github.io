@@ -1,0 +1,31 @@
+
+/* BLOCKQUOTE
+   ============================= */
+
+blockquote {
+
+	position: relative;
+
+	display: block;
+	margin: 12px 0;
+	padding-left: 25px;
+
+	color: #777777;
+	overflow: hidden;
+
+}
+
+blockquote:before {
+
+	content: "";
+
+	position: absolute;
+	left: 5px;
+
+	display: block;
+	width: 8px;
+	height: 100%;
+
+	background: #dddddd;
+
+}
