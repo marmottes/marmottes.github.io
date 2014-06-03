@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>marmottipsum!</title>
+
+		<script src="marmottipsum.js"></script>
+
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+
+		<main class="content">
+
+			<h1><a href="https://github.com/marmottes/marmottipsum" target="_blank">
+
+				Marmottipsum
+
+			</a></h1>
+
+			<p id="marmotte"></p>
+
+		</main>
+
+		<script>
+
+			var paragraph = document.getElementById("marmotte")
+
+			paragraph.innerHTML = marmottipsum();
+
+			paragraph.addEventListener("click", function(event) {
+				
+				this.innerHTML = marmottipsum();
+
+			}, false);
+
+		</script>
+
+	</body>
+
+</html>
